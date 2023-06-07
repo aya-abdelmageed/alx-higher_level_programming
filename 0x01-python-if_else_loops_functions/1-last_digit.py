@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
+
 d = abs(number) % 10
-if d < 0:
+if number < 0:
     d = d * -1
 
 if d > 5:
