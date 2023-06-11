@@ -6,17 +6,14 @@ if __name__ != "__main__":
     exit()
 
 strArg = "{:d} argument"
-argc = len(sys.argv) - 1
-if argc == 0:
+argc = len(sys.argv)
+if argc == 1:
     strArg += 's.'
-elif argc == 1:
+elif argc == 2:
     strArg += ':'
 else:
     strArg += 's:'
 print(strArg.format(argc))
 
-i = 0
-for arg in sys.argv:
-    if i != 0:
-        print("{:d}: {:s}".format(i, arg))
-    i += 1
+for i in range(1, argc):
+        print("{:d}: {:s}".format(i, sys.argv[i]))
