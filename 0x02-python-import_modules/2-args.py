@@ -18,6 +18,5 @@ print(strArg.format(argc))
 i = 0
 for arg in sys.argv:
     if i != 0:
-        print(f"{i:d}: {arg:s}")
-
+        print("{:d}: {:s}".format(i, arg))
     i += 1
