@@ -2,9 +2,8 @@
 
 
 def element_at(my_list, idx):
-    l = len(my_list) - 1
 
-    if (idx <= l and idx >= 0):
+    if (idx <= (len(my_list) - 1) and idx >= 0):
         return (my_list[idx])
 
     else:
