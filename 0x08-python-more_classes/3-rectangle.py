@@ -1,4 +1,4 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 """class Rectangle that defines a rectangle"""
 
 
@@ -88,17 +88,17 @@ class Rectangle:
         else:
             return (self.__width + self.__height) * 2
 
-        def __str__(self):
-            """Return the printable representation of the Rectangle.
-            Represents the rectangle with the # character.
-            """
-            if self.__width == 0 or self.__height == 0:
-                return ("")
+    def __str__(self):
+        """Return the printable representation of the Rectangle.
+        Represents the rectangle with the # character.
+        """
+        if self.__width == 0 or self.__height == 0:
+            return ("")
 
-            str = ""
-            for i in range(self.__height):
-                for j in range(self.__width):
-                    str += '#'
-                if self.__width != 0 and i != self.__height - 1:
-                    str += '\n'
-            return (str)
+        str = ""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                str += '#'
+            if self.__width != 0 and i != self.__height - 1:
+                str += '\n'
+        return (str)
