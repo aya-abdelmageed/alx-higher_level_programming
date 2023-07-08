@@ -111,7 +111,7 @@ class Rectangle:
         """return a string of the rectangle """
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
-    @staticmethod
+    @classmethod
     def __del__(self):
         """prints message of deletion of instance.
         """
