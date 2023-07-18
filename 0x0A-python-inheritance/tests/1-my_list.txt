@@ -1,0 +1,73 @@
+The 1-my_list module
+_________________________________
+
+
+Import function from module:
+    >>> MyList = __import__('1-my_list').MyList
+
+Class Type test:
+    >>> l = MyList()
+    >>> type(l) == MyList
+    True
+
+Instance test:
+    >>> l = MyList()
+    >>> isinstance(l, list)
+    True
+
+print_sorted method return the list sorted:
+    >>> type(MyList.__dict__['print_sorted'])
+    <class 'function'>
+
+print_sorted method called via class with no args:
+    >>> l.__class__.print_sorted()
+    Traceback (most recent call last):
+    TypeError: print_sorted() missing 1 required positional argument: 'self'
+
+print_sorted method called with 1 arg:
+    >>> l.print_sorted([4, 2, 5])
+    Traceback (most recent call last):
+    TypeError: print_sorted() takes 1 positional argument but 2 were given
+
+print_sorted method called with 2 args:
+    >>> l.print_sorted([4, 2, 5], 1)
+    Traceback (most recent call last):
+    TypeError: print_sorted() takes 1 positional argument but 3 were given
+
+Empty list test:
+    >>> l = MyList()
+    >>> l.print_sorted()
+    []
+
+Normal list test:
+    >>> l = MyList([8, 10, 5])
+    >>> l.print_sorted()
+    [5, 8, 10]
+
+Normal list test 2:
+    >>> l = MyList([1, 4, 2, 3, 5])
+    >>> l.print_sorted()
+    [1, 2, 3, 4, 5]
+
+Negative ints list test:
+    >>> l = MyList([-10, -8, -2325065, 0, -223434, -123])
+    >>> l.print_sorted()
+    [-2325065, -223434, -123, -10, -8, 0]
+
+Original list unchanged:
+    >>> l = MyList([2, 10, 1, -10, 40, 1000, 0])
+    >>> l.print_sorted()
+    [-10, 0, 1, 2, 10, 40, 1000]
+    >>> ml
+    [2, 10, 1, -10, 40, 1000, 0]
+
+List already in order:
+    >>> l = MyList([-10, 0, 1, 2, 10, 20, 100])
+    >>> l.print_sorted()
+    [-10, 0, 1, 2, 10, 20, 100]
+
+Test append:
+    >>> l = MyList()
+    >>> l.append(10)
+    >>> l
+    [10]
