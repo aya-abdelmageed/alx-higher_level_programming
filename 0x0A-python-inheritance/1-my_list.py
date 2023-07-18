@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""derived class"""
 
 
 class MyList(list):
