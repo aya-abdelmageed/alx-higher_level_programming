@@ -15,4 +15,4 @@ class Student:
         if (type(attrs) == list and
                 all(type(el) == str for el in attrs)):
             return {i: getattr(self, i) for i in attrs if hasattr(self, i)}
-        return sel.__dict__
+        return self.__dict__
