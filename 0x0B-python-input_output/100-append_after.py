@@ -8,9 +8,9 @@ def append_after(filename="", search_string="", new_string=""):
     with open(filename, "r+") as f:
             lines = f.readlines()
             new = []
-            for l in range(len(lines)):
-                new.append(lines[l])
-                if search_string in lines[l]:
+            for line in range(len(lines)):
+                new.append(lines[line])
+                if search_string in lines[line]:
                     new.append(new_string)
  
             f.seek(0)
