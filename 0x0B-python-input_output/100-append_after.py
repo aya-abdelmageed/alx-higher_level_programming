@@ -7,10 +7,11 @@ def append_after(filename="", search_string="", new_string=""):
     after each line containing a specific string"""
     with open(filename, "r+") as f:
             lines = f.readlines()
-            i = 0
-            for l in lines:
-                if l.find(search_string) is not -1:
-                    lines.insert(i + 1, new_string)
-                i += 1
+            new = []
+            for l in range(len(lines)):
+                new.append(lines[l])
+                if search_string in lines[l]:
+                    new.append(new_string)
+                
             f.seek(0)
-            f.write("", join(lines))
+            f.write("", join(new))
