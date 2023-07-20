@@ -18,11 +18,11 @@ start
 
 >>> matrix_mul("Hello", [[1, 2]])
 Traceback (most recent call last):
-TypeError: m_a must be a list
+TypeError: m_a must be a list of lists
 
 >>> matrix_mul(["moon", "stars"], [[1, 2]])
 Traceback (most recent call last):
-TypeError: m_a must be a list
+TypeError: m_a must be a list of lists
 
 
 >>> matrix_mul([[1, 2]], ["stars", "moon"])
