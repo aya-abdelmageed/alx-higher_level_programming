@@ -22,12 +22,12 @@ TypeError: m_a must be a list
 
 >>> matrix_mul(["moon", "stars"], [[1, 2]])
 Traceback (most recent call last):
-TypeError: m_a must be a list of lists
+TypeError: m_a must be a list
 
 
 >>> matrix_mul([[1, 2]], ["stars", "moon"])
 Traceback (most recent call last):
-TypeError: m_b must be a list of lists
+TypeError: m_b must be a list
 
 >>> matrix_mul([], [[9, 4]])
 Traceback (most recent call last):
