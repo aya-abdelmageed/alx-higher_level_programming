@@ -41,16 +41,17 @@ Different list length in matrix input:
 
 Negative variables in list inputs:
     >>> matrix = [[1, 2, -3], [4, 5, -6]]
-    >>> prinix = []
+    >>> print(matrix_divided(matrix, 2))
     [[0.5, 1.0, -1.5], [2.0, 2.5, -3.0]]
 
 Empty matrix input:
     >>> matrix = []
-    >>> printmatrix_divided(matrix, 2))
+    >>> print(matrix_divided(matrix, 2))
     Traceback (most recent call last):
     ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
 
+empty list of lists :
     >>> matrix = [[]]
     >>> print(matrix_divided(matrix, 3))
     [[]] 
