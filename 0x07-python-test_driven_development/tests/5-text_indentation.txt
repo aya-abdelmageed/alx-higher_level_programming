@@ -16,13 +16,12 @@ no space at the beginning:
 
 >>> text_indentation("   Hello world!")
 Hello world!
-<BLANKLINE>
 
 
 no space at the end:
 
 >>> text_indentation("   Hello world. ")
-Hello world!
+Hello world.
 <BLANKLINE>
 
 >>> text_indentation(" Hello.    world. ")
@@ -49,7 +48,6 @@ world.
 <BLANKLINE>
 <BLANKLINE>
 Hello
-<BLANKLINE>
 world.
 <BLANKLINE>
 
