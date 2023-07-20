@@ -54,6 +54,7 @@ Empty matrix input:
 empty list of lists :
     >>> matrix = [[]]
     >>> print(matrix_divided(matrix, 3)) 
+    [[]]
 
 No input:
     >>> print(matrix_divided())
