@@ -9,7 +9,7 @@ Usage
 My name is Yoo Hoo
 
 >>> say_my_name("Yoo")
-My name is Yoo
+My name is Yoo 
 
 invalid
 ==========
